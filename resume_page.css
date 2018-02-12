@@ -1,0 +1,224 @@
+body{
+	margin:0px;
+	font-size:18px;
+	background: rgb(228,228,228); /* For browsers that do not support gradients */
+	/*background: -webkit-linear-gradient(left top, white, gray); /* For Safari 5.1 to 6.0 */
+	/*background: -o-linear-gradient(bottom right, white, gray); /* For Opera 11.1 to 12.0 */
+	/*background: -moz-linear-gradient(bottom right, white, gray); /* For Firefox 3.6 to 15 */
+	/*background: linear-gradient(to bottom right, white, gray); /* Standard syntax */
+	/*opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+	
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#background{
+	background-image: url("../images/bg.jpg")
+}
+
+img{
+	width:15px;
+	height:15px;
+	cursor:pointer;
+}
+
+.click-title:hover {
+	color:teal;
+	cursor:pointer;
+}
+
+.period{
+	font-size:14px;
+}
+
+a{
+	text-decoration:none;
+	border-bottom: 2px solid rgb(228,228,228);
+	
+}
+
+a:visited{
+	color:rgb(0, 102, 255);
+}
+
+img:hover{
+    opacity: 0.4;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#header-cont{
+	width:100%;
+    position:fixed;
+    top:0px;
+	font-family:serif;	
+}
+
+#header-cont-img{
+	position:absolute;
+	top:20%;
+	left:28%;
+	width:180px;
+	height:90px;
+	border-radius:70%;
+	opacity: 0.7;
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+header{
+	width:960px;
+	height:auto;
+	background-color:white;
+	margin: 0px auto;
+	border: solid 1px black;
+	text-align:center;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#information{
+	margin-top:10px;
+	font-size:24px;
+}
+
+#body{
+	width:960px;
+	height:auto;
+	background-color:white;
+	margin: 0px auto;
+	box-shadow: 5px 5px 3px #888888;
+}
+
+#content{
+	margin-top:200px;
+	margin-left:50px;
+	margin-right:50px;	
+	margin-bottom:50px;
+	
+}
+
+h4{
+	margin-left:50px;
+}
+
+h3{
+	padding-top:25px;
+	margin-left:25px;
+}
+
+.title-cont{
+	width:960px;
+}
+
+.float-left{
+	width:50%;
+	text-align:left;
+	float:left;
+}
+
+.float-right{
+	width:50%;
+	text-align:right;
+	float:right;
+	
+}
+
+ul{
+	list-style-type:circle;
+}
+
+#classes-scsu, #classes-sctcc, #amazon, #one, #two, #three, #four, #five, #xerox{
+	display:none;
+}
+
+#references{
+	padding-bottom:2px;
+}
+
+.ref{
+	list-style-type:none;
+}
+
+li{
+	
+}
+
+.center{
+	text-align:justify;
+	margin:50px;
+	margin-top:25px;
+}
+
+footer{
+	width:100%;
+	height:50px;
+	position:fixed;
+	margin: 70px auto;
+}
+
+#clock{
+	width:inherit;
+	height:auto;
+	text-align:center;
+	font-size:20px;
+	background-color:#F8F8F8;
+}
+
+/**********************************************************************************************************/
+
+
+/**			Dialog Box CSS Below		**/
+
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:10px; 
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:5px; }
+#dialogbox > div > #dialogboxhead{ background: white; font-size:25px; padding:10px; color:black; }
+#dialogbox > div > #dialogboxbody{ background:teal; font-size:18px; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: white; padding:10px; text-align:right; }
+
+/*********************************************************************************************************/
+
+/**			Mobile CSS Below			**/		
+
+
+/** target small screens (mobile devices or small desktop windows)*/
+@media only screen and (max-device-width: 480px) {
+
+body{
+	background-color:white;
+}
+
+#dialogbox > div{
+	font-size:30px;
+}
+
+#btnOK{
+	width:100px;
+	height:50px;
+	font-size:20px;
+}
+
+#information{
+	font-size:24px;
+}
+
+
+}
